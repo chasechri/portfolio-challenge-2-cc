@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    padding: 15px 60px;
+    background-color: rgb(199, 218, 212);
+}
+
+header h1 {
+    font-weight: lighter;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    padding: 15px 15px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+}
+
+section {
+    padding: 60px;
+}
+
+.about-me {
+    background-color: rgb(231, 249, 231);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about-me img {
+    width: 200px;
+    height: auto;
+    border-radius: 15%;
+}
+
+footer {
+    background-color: rgb(199, 218, 212);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
