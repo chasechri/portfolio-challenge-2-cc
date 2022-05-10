@@ -1,3 +1,8 @@
+:root {
+    --primary-color: rgb(199, 218, 212);
+    --secondary-color: rgb(231, 249, 231);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +13,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: stretch;
-    padding: 15px 60px;
-    background-color: rgb(199, 218, 212);
+    padding: 10px 60px;
+    top: 0;
+    position: sticky;
+    background-color: var(--primary-color);
     justify-content: space-between;
     border: 1px solid;
 }
@@ -43,11 +50,11 @@ section {
 }
 
 .about-me {
-    background-color: rgb(231, 249, 231);
+    background-color: var(--secondary-color);
     display: flex;
     align-items: flex-start;
     border-bottom: 3px solid;
-    border-color: rgb(199, 218, 212);
+    border-color: var(--primary-color);
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -56,6 +63,7 @@ section {
     width: 200px;
     height: auto;
     border-radius: 15%;
+    border: 1px solid;
 }
 
 .about-me-text h2 {
@@ -74,7 +82,7 @@ section {
 }
 
 footer {
-    background-color: rgb(199, 218, 212);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     padding: 40px 35px;
@@ -86,10 +94,12 @@ footer {
 
 footer h2 {
     font-weight: lighter;
+    font-size: 35px;
 }
 
 footer a {
     text-decoration: none;
+    font-size: 20px;
 }
 
 
@@ -97,6 +107,7 @@ footer nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    padding-top: 16px;
 }
 
 footer nav ul li a {
@@ -120,6 +131,9 @@ footer nav ul li a {
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: whitesmoke;
 }
 
 .work div {
@@ -130,9 +144,9 @@ footer nav ul li a {
 
 .work div article {
     border: 3px solid;
-    border-color: rgb(199, 218, 212);
+    border-color: var(--primary-color);
     border-radius: 2.5%;
-    background-color: rgb(231, 249, 231);
+    background-color: var(--secondary-color);
 }
 
 .work img {
@@ -143,6 +157,7 @@ footer nav ul li a {
 
 .work article {
     text-align: center;
+    margin: 5px;
 }
 
 .work article h3 {
