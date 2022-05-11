@@ -23,7 +23,7 @@ header {
 
 header h1 {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 header a {
@@ -60,7 +60,7 @@ section {
 }
 
 .about-me img {
-    width: 200px;
+    width: 13.5rem;
     height: auto;
     border-radius: 15%;
     border: 1px solid;
@@ -68,7 +68,7 @@ section {
 
 .about-me-text h2 {
     font-weight: 200;
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 .about-me-text {
@@ -77,13 +77,14 @@ section {
 
 .about-me-text p {
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 200;
 }
 
 footer {
     background-color: var(--primary-color);
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 40px 35px;
     bottom: 0;
@@ -94,18 +95,19 @@ footer {
 
 footer h2 {
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 
 footer a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 
 footer nav ul {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     list-style-type: none;
     padding-top: 16px;
 }
@@ -116,14 +118,13 @@ footer nav ul li a {
 
 .work h2 {
     text-align: center;
-    text-align: center;
     border-bottom: 1.5px solid;
     width: 25%;
     margin: auto;
     padding-bottom: 5px;
     margin-bottom: 10px;
     font-weight: 200;
-    font-size: 36px;
+    font-size: 2.8rem;
 }
 
 .work {
@@ -136,10 +137,24 @@ footer nav ul li a {
     background-color: whitesmoke;
 }
 
+.run-buddy {
+    padding-bottom: 1rem;
+}
+
+.run-buddy-img {
+    width: 70%;
+    border-radius: 2.5%;
+}
+
+.horiseon-img {
+    width: 300px;
+    border-radius: 2.5%;
+}
+
 .work div {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .work div article {
@@ -149,18 +164,23 @@ footer nav ul li a {
     background-color: var(--secondary-color);
 }
 
-.work img {
-    width: 400px;
-    height: auto;
-    border-radius: 2.5%;
-}
-
 .work article {
     text-align: center;
     margin: 5px;
 }
 
 .work article h3 {
-    font-size: 26px;
+    font-size: 1.8rem;
     font-weight: lighter;
+}
+
+@media screen and (min-width:769px) {
+    .work div {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    footer nav ul {
+        flex-direction: row;
+    }
 }
