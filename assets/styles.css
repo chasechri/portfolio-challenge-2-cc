@@ -199,6 +199,10 @@ footer nav ul li a {
 }
 /* work section end */
 
+.national img {
+    width: 260px;
+}
+
 @media screen and (min-width:769px) {
     .work div {
         flex-wrap: wrap;
